@@ -1,0 +1,42 @@
+@import '../../styles/media';
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px 0 15px;
+
+  @include respond-above(tablet) {
+    width: 750px;
+  }
+
+  @include respond-above(desktop) {
+    width: 970px;
+  }
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.column {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+
+  @for $i from 1 through 12 {
+    &__xs#{$i} {
+      width: calc-width($i);
+    }
+  }
+
+  @include generate-col-sizes('sm', tablet);
+  @include generate-col-sizes('md', desktop);
+}

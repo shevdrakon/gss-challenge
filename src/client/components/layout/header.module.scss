@@ -1,0 +1,21 @@
+.header {
+  padding-top: 30px;
+  position: relative;
+}
+
+.header__title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.header__login__avatar {
+  margin-left: 6px;
+}

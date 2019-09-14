@@ -1,0 +1,35 @@
+@import '../../../src/client/styles/animations';
+
+.messagesList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 320px;
+  min-height: 380px;
+  border-radius: 10px;
+  box-shadow: 0 6px 25px 0 #d9e5f1, inset 2px -5px 25px 0 rgba(229, 240, 250, .4);
+}
+
+.messagesList__items {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.messagesList__textFieldContainer {
+  border-top: 1px solid #ecf5fd;
+  padding: 10px;
+  display: flex;
+}
+
+.messagesList__input {
+  flex-grow: 1;
+}
+
+.messagesList__sendButton {
+  height: 40px;
+}
+
+.messagesList__message {
+  animation: fadeInUp 1s;
+}

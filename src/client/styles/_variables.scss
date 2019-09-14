@@ -1,0 +1,35 @@
+$backgroundColor: rgb(250, 251, 252);
+
+$colors: (
+  primary: #2d9bf3,
+  lightGray: #9bb0bf,
+  lightWhite: #ecf5fd,
+  error: #ef1a55,
+);
+
+$text-color: #24374e;
+
+$textFieldColors: (
+  label: #9aa8be,
+  text: #4c5669,
+  border: #ecf2fc,
+  border-active: #2481d7,
+  placeholder: #9aa8be,
+);
+
+$button-colors: (
+  text: #fff,
+  background: #3f90dc,
+  background-on-hover: #28a7db,
+);
+
+$snackbar-colors: (
+  default: #2481d7,
+  error: #d32f2f,
+  success: #43a047,
+);
+
+$border-styles: (
+  dashed: 1px dashed #d6e0f1,
+  solid: 1px solid #ddd,
+);

@@ -1,0 +1,14 @@
+.title {
+  padding-bottom: 4px;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.controls__button {
+  border-radius: 15px;
+  height: 30px;
+  margin-left: 10px;
+}

@@ -1,0 +1,15 @@
+@import '../../styles/media';
+
+.content {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px 0 15px;
+
+  @include respond-above(tablet) {
+    width: 750px;
+  }
+
+  @include respond-above(desktop) {
+    width: 970px;
+  }
+}

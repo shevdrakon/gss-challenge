@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+
+.button {
+  height: 50px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  user-select: none;
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: .65;
+  }
+
+  &:hover {
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, color .15s ease-in-out;
+    box-shadow: 0 7px 14px rgba(36, 129, 215, 0.1), 0 3px 6px rgba(36, 129, 215, 0.08);
+
+    &[disabled] {
+      box-shadow: none;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.button__primary {
+  background: map_get($button-colors, "background");
+  color: map_get($button-colors, "text");
+  font-size: 14px;
+  border: 0;
+
+  &:hover {
+    background-color: map_get($button-colors, "background-on-hover");
+  }
+}

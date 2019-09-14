@@ -1,0 +1,61 @@
+@import '../styles/animations';
+
+.content {
+  padding-top: 40px;
+  padding-bottom: 4px;
+}
+
+.content__container {
+  margin: 0 auto;
+  padding: 0;
+  float: none;
+}
+
+.card {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 650px;
+}
+
+.card__header {
+  margin: 20px 20px 10px 20px;
+  border-bottom: 1px solid #ecf5fd;
+}
+
+.card__header__title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.card__header__icon {
+  margin-right: 6px;
+}
+
+.chat__messages {
+  flex-grow: 1;
+  height: 250px;
+  padding: 15px;
+}
+
+.chat__controls {
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid #ecf5fd;
+  display: flex;
+}
+
+.chat__controls__input {
+  flex-grow: 1;
+}
+
+.chat__controls__buttons {
+  display: flex;
+}
+
+.chat__controls__send {
+  border-right: 1px solid;
+}
+
+.chat__controls__command {
+  border-left: none;
+}
